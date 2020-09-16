@@ -1,0 +1,25 @@
+{
+  "name": "ts-app",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir dist --extensions \".ts\"",
+    "start": "node ./dist/main.js",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "author": "Bernhard Häussermann",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-typescript": "^7.11.0",
+    "@babel/preset-env": "^7.11.5",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.10.2",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
+    "typescript": "^4.0.2"
+  }
+}
